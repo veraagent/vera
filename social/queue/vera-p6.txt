@@ -1,0 +1,7 @@
+Give Claude a payment check.
+
+One line in claude_desktop_config.json:
+"vera": { "command": "npx", "args": ["-y", "veralayer", "mcp"] }
+
+Tools: vera_check, vera_guard_payment
+Works in Claude Desktop, Claude Code, Cursor, any MCP client.

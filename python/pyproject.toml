@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "veralayer"
+version = "0.1.0"
+description = "Payment guard for AI agents on Solana: scores each recipient with Vera, verifies the signed result locally and enforces your spending policy."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "VeraLayer" }]
+keywords = ["solana", "ai-agent", "agent-payments", "trust-score", "risk", "guard"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Security",
+]
+dependencies = ["cryptography>=41"]
+
+[project.urls]
+Homepage = "https://veraagent.io"
+Documentation = "https://veraagent.io/docs"
+Source = "https://github.com/veraagent/vera"
+
+[project.scripts]
+veralayer = "veralayer.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/veralayer"]

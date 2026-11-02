@@ -1,0 +1,7 @@
+Agents don't send payments. They sign transactions.
+
+So the guard reads the transaction itself:
+· SOL transfers
+· SPL + Token-2022 transfers, resolved to the wallet that owns the token account
+· v0 lookup tables
+· approve / setAuthority / closeAccount → blocked by default

@@ -1,0 +1,8 @@
+Swap one call:
+
+connection.sendTransaction(tx, [agent])
+→ guard.sendTransaction(tx, [agent])
+
+Blocked transactions throw with the reason. Nothing reaches the network.
+
+Docs: veraagent.io/docs

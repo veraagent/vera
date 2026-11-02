@@ -1,0 +1,39 @@
+{
+  "id": "921d57674ecf7b0df51e32abd7b39641f5fbc1c1a166d687e61ab707eb8fd188",
+  "attestation": {
+    "v": 1,
+    "issuer": "4VyCQLEb8eVmPYXDUwYkEpCMhXFBRshUiKHHuKTfPDFQ",
+    "subject": "AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51",
+    "score": 55,
+    "tier": "medium",
+    "reasons": [
+      {
+        "kind": "ok",
+        "text": "No flagged counterparties and address itself not listed."
+      },
+      {
+        "kind": "info",
+        "text": "High-frequency wallet with 3000+ transactions read; not necessarily new."
+      },
+      {
+        "kind": "warn",
+        "text": "21 unrecognised programs, about 20% of program calls."
+      },
+      {
+        "kind": "warn",
+        "text": "Only 1 repeat counterparty among 138 in sample."
+      },
+      {
+        "kind": "ok",
+        "text": "Low failure rate of 2.5% across 100 sampled transactions."
+      }
+    ],
+    "features_sha256": "080033a6fb349229cf84a5307498c6e89bec51474ce1377b0924d775c8334209",
+    "method": "vera-v1+claude-opus-5.5",
+    "issued_at": "2026-11-02T16:46:39.478Z",
+    "expires_at": "2026-11-03T16:46:39.478Z"
+  },
+  "signature": "24wBzNhtanuaMGwVdc7x5Za3Vi1ChDsJvJ5WzC5eYjiKGp7xNEgRGKtYSS31u2A2zwkes5J14FBW7ywdjYPGf2oK",
+  "anchor": null,
+  "summary": "High-frequency DeFi trading wallet with large balance and no flags; notable unrecognised program use and few recurring counterparties."
+}

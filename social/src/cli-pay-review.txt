@@ -1,0 +1,5 @@
+
+REVIEW  12 SOL out
+  → 12 SOL to AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51
+  MEDIUM 57 AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51 signature ✓
+  review  12 SOL to AgmL…zN51 exceeds the 5 SOL limit for medium trust

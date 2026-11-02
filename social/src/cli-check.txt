@@ -1,0 +1,11 @@
+
+4/100 LOW  293BG8kFBPnNLfmFzcfExfaQfKFiAToYm3RCENiyffYy
+Wallet is on a curated scam-cluster list, which outweighs its moderate history and repeat counterparties; very high risk.
+  × Address is listed in a tracked scam wallet cluster.
+  ! 2 unrecognised programs account for 86 of 687 calls.
+  ! 13.9% of sampled transactions failed.
+  ✓ Active for 112 days with 45 repeat counterparties.
+  i Funded by a high-volume source; funder not flagged.
+
+attestation e5975bef4613b8571cc9ec9acebe5a1097f0df3b248a9060557455ab33eafe3f
+signature verified · vera-v1+claude-opus-5.5 · expires 2026-11-03T19:06:56.166Z

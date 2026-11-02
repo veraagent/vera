@@ -1,0 +1,5 @@
+
+ALLOW  1 SOL out
+  → 1 SOL to AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51
+  MEDIUM 57 AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51 signature ✓
+  no policy findings

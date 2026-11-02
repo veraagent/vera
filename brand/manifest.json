@@ -1,0 +1,233 @@
+[
+ {
+  "svg": "logo/concepts/concept-a-monogram.svg",
+  "png": "logo/concepts/concept-a-monogram.png",
+  "w": 400,
+  "h": 400
+ },
+ {
+  "svg": "logo/concepts/concept-b-wordmark.svg",
+  "png": "logo/concepts/concept-b-wordmark.png",
+  "w": 400,
+  "h": 400
+ },
+ {
+  "svg": "logo/concepts/concept-c-ring.svg",
+  "png": "logo/concepts/concept-c-ring.png",
+  "w": 400,
+  "h": 400
+ },
+ {
+  "svg": "logo/mark-light.svg",
+  "png": "logo/png/mark-light-512.png",
+  "w": 512,
+  "h": 512,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-light.svg",
+  "png": "logo/png/mark-light-1024.png",
+  "w": 1024,
+  "h": 1024,
+  "transparent": true
+ },
+ {
+  "svg": "logo/wordmark-light.svg",
+  "png": "logo/png/wordmark-light.png",
+  "w": 1110,
+  "h": 288,
+  "transparent": true
+ },
+ {
+  "svg": "logo/full-light.svg",
+  "png": "logo/png/full-light.png",
+  "w": 1536,
+  "h": 360,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-dark.svg",
+  "png": "logo/png/mark-dark-512.png",
+  "w": 512,
+  "h": 512,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-dark.svg",
+  "png": "logo/png/mark-dark-1024.png",
+  "w": 1024,
+  "h": 1024,
+  "transparent": true
+ },
+ {
+  "svg": "logo/wordmark-dark.svg",
+  "png": "logo/png/wordmark-dark.png",
+  "w": 1110,
+  "h": 288,
+  "transparent": true
+ },
+ {
+  "svg": "logo/full-dark.svg",
+  "png": "logo/png/full-dark.png",
+  "w": 1536,
+  "h": 360,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-mono-black.svg",
+  "png": "logo/png/mark-mono-black-512.png",
+  "w": 512,
+  "h": 512,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-mono-black.svg",
+  "png": "logo/png/mark-mono-black-1024.png",
+  "w": 1024,
+  "h": 1024,
+  "transparent": true
+ },
+ {
+  "svg": "logo/wordmark-mono-black.svg",
+  "png": "logo/png/wordmark-mono-black.png",
+  "w": 1110,
+  "h": 288,
+  "transparent": true
+ },
+ {
+  "svg": "logo/full-mono-black.svg",
+  "png": "logo/png/full-mono-black.png",
+  "w": 1536,
+  "h": 360,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-mono-white.svg",
+  "png": "logo/png/mark-mono-white-512.png",
+  "w": 512,
+  "h": 512,
+  "transparent": true
+ },
+ {
+  "svg": "logo/mark-mono-white.svg",
+  "png": "logo/png/mark-mono-white-1024.png",
+  "w": 1024,
+  "h": 1024,
+  "transparent": true
+ },
+ {
+  "svg": "logo/wordmark-mono-white.svg",
+  "png": "logo/png/wordmark-mono-white.png",
+  "w": 1110,
+  "h": 288,
+  "transparent": true
+ },
+ {
+  "svg": "logo/full-mono-white.svg",
+  "png": "logo/png/full-mono-white.png",
+  "w": 1536,
+  "h": 360,
+  "transparent": true
+ },
+ {
+  "svg": "icons/app-icon.svg",
+  "png": "icons/app-icon-512.png",
+  "w": 512,
+  "h": 512,
+  "transparent": true
+ },
+ {
+  "svg": "icons/favicon.svg",
+  "png": "icons/favicon-16.png",
+  "w": 16,
+  "h": 16,
+  "transparent": true
+ },
+ {
+  "svg": "icons/favicon.svg",
+  "png": "icons/favicon-32.png",
+  "w": 32,
+  "h": 32,
+  "transparent": true
+ },
+ {
+  "svg": "icons/favicon.svg",
+  "png": "icons/favicon-48.png",
+  "w": 48,
+  "h": 48,
+  "transparent": true
+ },
+ {
+  "svg": "icons/favicon.svg",
+  "png": "icons/favicon-180.png",
+  "w": 180,
+  "h": 180,
+  "transparent": true
+ },
+ {
+  "svg": "palette/palette.svg",
+  "png": "palette/palette.png",
+  "w": 1200,
+  "h": 700
+ },
+ {
+  "svg": "x/avatar-400.svg",
+  "png": "x/avatar-400.png",
+  "w": 400,
+  "h": 400
+ },
+ {
+  "svg": "x/header-1500x500.svg",
+  "png": "x/header-1500x500.png",
+  "w": 1500,
+  "h": 500
+ },
+ {
+  "svg": "x/launch-1200x675.svg",
+  "png": "x/launch-1200x675.png",
+  "w": 1200,
+  "h": 675
+ },
+ {
+  "svg": "x/thread-1-problem.svg",
+  "png": "x/thread-1-problem.png",
+  "w": 1200,
+  "h": 675
+ },
+ {
+  "svg": "x/thread-2-how.svg",
+  "png": "x/thread-2-how.png",
+  "w": 1200,
+  "h": 675
+ },
+ {
+  "svg": "x/thread-3-scorecard.svg",
+  "png": "x/thread-3-scorecard.png",
+  "w": 1200,
+  "h": 675
+ },
+ {
+  "svg": "x/thread-4-solana-cta.svg",
+  "png": "x/thread-4-solana-cta.png",
+  "w": 1200,
+  "h": 675
+ },
+ {
+  "svg": "x/scorecard-1080.svg",
+  "png": "x/scorecard-1080.png",
+  "w": 1080,
+  "h": 1080
+ },
+ {
+  "svg": "x/teaser-coming-soon.svg",
+  "png": "x/teaser-coming-soon.png",
+  "w": 1200,
+  "h": 675
+ },
+ {
+  "svg": "og/og-1200x630.svg",
+  "png": "og/og-1200x630.png",
+  "w": 1200,
+  "h": 630
+ }
+]

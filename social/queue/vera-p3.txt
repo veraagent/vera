@@ -1,0 +1,8 @@
+How Vera scores a recipient:
+
+1. Read: 3,000 signatures, the last 100 txs, who funded it
+2. Score: deterministic 0–100 from on-chain features
+3. Explain: Claude may move it ±15, every reason cites a feature
+4. Sign: ed25519
+
+Rules first. The model second.

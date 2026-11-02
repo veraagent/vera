@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Brand tokens: mirror of brand/tokens.mjs (taken from veralayer.io) */
+@theme {
+  --color-blush: #ffd4d2;
+  --color-blush-soft: #fff1f0;
+  --color-cream: #fff9f7;
+  --color-brick: #941900;
+  --color-coral: #ff6b4a;
+  --color-night: #0c0a09;
+  --color-high: #166534;
+  --color-medium: #92400e;
+  --color-low: #b91c1c;
+  --color-unknown: #78716c;
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-logo: var(--font-poppins), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-jet), ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #fff; color: #000; }
+
+/* blush washes, as on every veralayer.io section */
+.wash-tl { background: radial-gradient(900px 700px at 0% 0%, var(--color-blush) 0, #fff 100%); }
+.wash-br { background: radial-gradient(700px 420px at 100% 25%, var(--color-blush-soft) 0, #fff 100%); }
+.wash-r { background: radial-gradient(800px 600px at 100% 50%, var(--color-blush-soft) 0, #fff 100%); }
+.wash-b { background: radial-gradient(900px 500px at 50% 30%, var(--color-blush-soft) 0, #fff 100%); }
+.rule { height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--color-brick), var(--color-coral) 50%, #e5e2e1); }
+.eyebrow { font-family: var(--font-sans); font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-brick); }
+.accent { font-style: italic; font-weight: 700; color: var(--color-brick); }
+.card { background: #fff; border: 1px solid var(--color-stone-200); border-radius: 32px; box-shadow: 0 20px 25px -5px rgb(90 26 10 / 0.07), 0 8px 10px -6px rgb(90 26 10 / 0.05); }
+:focus-visible { outline: 2px solid var(--color-brick); outline-offset: 3px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+
+/* docs prose */
+.docs h1 { font-family: var(--font-serif); font-size: 2.75rem; line-height: 1.1; font-weight: 500; letter-spacing: -0.02em; }
+.docs h2 { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 500; margin-top: 2.75rem; letter-spacing: -0.01em; }
+.docs h3 { font-weight: 700; margin-top: 1.75rem; }
+.docs p, .docs li { color: var(--color-stone-700); line-height: 1.7; }
+.docs p { margin-top: 1rem; }
+.docs .lead { font-size: 1.125rem; color: var(--color-stone-600); margin-top: 1rem; }
+.docs ul { list-style: disc; padding-left: 1.25rem; margin-top: 1rem; }
+.docs ul li + li { margin-top: 0.35rem; }
+.docs :not(pre) > code { font-family: var(--font-mono); font-size: 0.85em; background: var(--color-stone-100); border-radius: 6px; padding: 0.1em 0.35em; color: var(--color-stone-900); }
+.docs a { color: var(--color-brick); text-decoration: underline; text-underline-offset: 3px; }
+.docs table { width: 100%; margin-top: 1.25rem; font-size: 0.9rem; border-collapse: collapse; }
+.docs th { text-align: left; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-stone-500); padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--color-stone-200); }
+.docs td { padding: 0.65rem 0.75rem 0.65rem 0; border-bottom: 1px solid var(--color-stone-200); vertical-align: top; color: var(--color-stone-700); }
+.docs .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.docs .table-wrap table { min-width: 560px; }
+@media (max-width: 640px) {
+  .docs .table-wrap, .docs pre { mask-image: linear-gradient(90deg, #000 88%, transparent); }
+}
+.docs .next { margin-top: 3.5rem; border-top: 1px solid var(--color-stone-200); padding-top: 1.5rem; }

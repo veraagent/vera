@@ -1,0 +1,135 @@
+[
+ {
+  "fg": "ink",
+  "bg": "paper",
+  "fgHex": "#000000",
+  "bgHex": "#FFFFFF",
+  "ratio": 21
+ },
+ {
+  "fg": "stone500",
+  "bg": "paper",
+  "fgHex": "#78716C",
+  "bgHex": "#FFFFFF",
+  "ratio": 4.8
+ },
+ {
+  "fg": "stone600",
+  "bg": "paper",
+  "fgHex": "#57534E",
+  "bgHex": "#FFFFFF",
+  "ratio": 7.63
+ },
+ {
+  "fg": "brick",
+  "bg": "paper",
+  "fgHex": "#941900",
+  "bgHex": "#FFFFFF",
+  "ratio": 8.76
+ },
+ {
+  "fg": "brick",
+  "bg": "blush",
+  "fgHex": "#941900",
+  "bgHex": "#FFD4D2",
+  "ratio": 6.5
+ },
+ {
+  "fg": "ink",
+  "bg": "blush",
+  "fgHex": "#000000",
+  "bgHex": "#FFD4D2",
+  "ratio": 15.6
+ },
+ {
+  "fg": "stone500",
+  "bg": "blushSoft",
+  "fgHex": "#78716C",
+  "bgHex": "#FFF1F0",
+  "ratio": 4.36
+ },
+ {
+  "fg": "high",
+  "bg": "paper",
+  "fgHex": "#166534",
+  "bgHex": "#FFFFFF",
+  "ratio": 7.13
+ },
+ {
+  "fg": "medium",
+  "bg": "paper",
+  "fgHex": "#92400E",
+  "bgHex": "#FFFFFF",
+  "ratio": 7.09
+ },
+ {
+  "fg": "low",
+  "bg": "paper",
+  "fgHex": "#B91C1C",
+  "bgHex": "#FFFFFF",
+  "ratio": 6.47
+ },
+ {
+  "fg": "unknown",
+  "bg": "paper",
+  "fgHex": "#78716C",
+  "bgHex": "#FFFFFF",
+  "ratio": 4.8
+ },
+ {
+  "fg": "paper",
+  "bg": "ink",
+  "fgHex": "#FFFFFF",
+  "bgHex": "#000000",
+  "ratio": 21
+ },
+ {
+  "fg": "paper",
+  "bg": "brick",
+  "fgHex": "#FFFFFF",
+  "bgHex": "#941900",
+  "ratio": 8.76
+ },
+ {
+  "fg": "paper",
+  "bg": "night",
+  "fgHex": "#FFFFFF",
+  "bgHex": "#0C0A09",
+  "ratio": 19.76
+ },
+ {
+  "fg": "coral",
+  "bg": "night",
+  "fgHex": "#FF6B4A",
+  "bgHex": "#0C0A09",
+  "ratio": 7.01
+ },
+ {
+  "fg": "stone400",
+  "bg": "night",
+  "fgHex": "#A8A29E",
+  "bgHex": "#0C0A09",
+  "ratio": 7.83
+ },
+ {
+  "fg": "highOnDark",
+  "bg": "night",
+  "fgHex": "#22C55E",
+  "bgHex": "#0C0A09",
+  "ratio": 8.67
+ },
+ {
+  "fg": "mediumOnDark",
+  "bg": "night",
+  "fgHex": "#EAB308",
+  "bgHex": "#0C0A09",
+  "ratio": 10.3
+ },
+ {
+  "fg": "lowOnDark",
+  "bg": "night",
+  "fgHex": "#F87171",
+  "bgHex": "#0C0A09",
+  "ratio": 7.14
+ }
+]
