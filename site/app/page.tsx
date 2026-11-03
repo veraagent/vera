@@ -81,7 +81,7 @@ export default async function Home() {
                 <pre className="overflow-x-auto p-5 font-mono text-[12.5px] leading-relaxed text-stone-800"><code>{GUARD}</code></pre>
               </div>
               <div className="card overflow-hidden">
-                <p className="flex justify-between border-b border-stone-200 px-5 py-3 font-mono text-[11px] text-stone-500"><span>vera result</span><span className="text-high">real · signed</span></p>
+                <p className="flex justify-between border-b border-stone-200 px-5 py-3 font-mono text-[11px] text-stone-500"><span>vera result</span></p>
                 <JsonView value={RESPONSE} />
               </div>
             </div>

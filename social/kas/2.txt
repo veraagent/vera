@@ -1,0 +1,1 @@
+2/ now imagine that agent running your treasury, paying other agents for data, compute and trades. thousands of payments a day and nobody reading any of them.

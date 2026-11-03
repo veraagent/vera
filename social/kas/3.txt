@@ -1,0 +1,5 @@
+3/ so we built vera.
+
+before your agent signs, it decodes the transaction, scores every recipient from their onchain history, and applies your spending rules. a payment that breaks them never reaches the network.
+
+npm install veralayer

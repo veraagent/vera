@@ -1,0 +1,5 @@
+4/ every score comes back signed, so anyone can verify it, and every block tells you which rule fired.
+
+your agent signs. vera checks first.
+
+veraagent.io @veraagentio

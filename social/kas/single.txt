@@ -1,0 +1,5 @@
+an ai agent with a wallet will sign whatever it's talked into. we built the thing that reads the transaction first.
+
+npm install veralayer
+
+veraagent.io @veraagentio
