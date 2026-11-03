@@ -61,3 +61,21 @@ export async function loadStats(): Promise<Stats | null> {
     return { checks: n(checks), today: n(t), low: n(low), medium: n(medium), high: n(high), unknown: n(unknown), last: (last as string) ?? null };
   } catch { return null; }
 }
+
+// ---- project token (revealed on the site only after the team sets a CA) ----
+export type Token = { ca: string; symbol: string | null; name: string | null; set_at: string };
+let memToken: Token | null = null;
+
+export async function loadToken(): Promise<Token | null> {
+  if (!storeEnabled()) return memToken;
+  try {
+    const [raw] = await pipeline([['GET', 'token']]);
+    return raw ? (JSON.parse(String(raw)) as Token) : null;
+  } catch { return null; }
+}
+
+export async function saveToken(t: Token | null) {
+  memToken = t;
+  if (!storeEnabled()) return;
+  await pipeline([t ? ['SET', 'token', JSON.stringify(t)] : ['DEL', 'token']]);
+}

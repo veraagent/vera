@@ -2,7 +2,7 @@
 export { check, checkMany, getAttestation, isAddress, type CheckResult } from './engine';
 export { verify, getSigner, canonical, type Attestation, type Signed } from './attest';
 export { config, aiEnabled } from './config';
-export { loadStats, storeEnabled, type Stats } from './store';
+export { loadStats, storeEnabled, loadToken, saveToken, type Stats, type Token } from './store';
 
 import { config } from './config';
 

@@ -1,7 +1,8 @@
 import Simulator from '@/components/Simulator';
 import CopyCommand from '@/components/CopyCommand';
 import sample from '@/lib/sample-check.json';
-import { loadStats, storeEnabled } from '@/lib/engine';
+import { loadStats, storeEnabled, loadToken } from '@/lib/engine';
+import TokenSection from '@/components/TokenSection';
 
 export const revalidate = 60;
 
@@ -38,7 +39,7 @@ const STEPS = [
 
 
 export default async function Home() {
-  const stats = await loadStats();
+  const [stats, token] = await Promise.all([loadStats(), loadToken()]);
   return (
     <>
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-xl focus:bg-black focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
@@ -105,6 +106,8 @@ export default async function Home() {
             </p>
           </div>
         </section>
+
+        {token && <TokenSection token={token} />}
       </main>
     </>
   );
