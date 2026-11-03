@@ -43,7 +43,7 @@ const pages = [
      <div style="position:absolute;left:80px;top:78px;display:flex;align-items:center;gap:18px">${mark(58)}<span style="font-size:44px;letter-spacing:-.02em"><i style="font-weight:700;color:${BRICK}">Vera</i> Agent</span></div>
      <div style="position:absolute;left:80px;top:230px;font-size:84px;font-weight:500;letter-spacing:-.025em;line-height:1.02">Your agent signs.<br><i style="font-weight:700;color:${BRICK}">Vera checks first.</i></div>
      <div style="position:absolute;left:80px;bottom:74px;font-family:JBM;font-size:26px;border:1.5px solid #E7E5E4;border-radius:14px;padding:14px 22px;background:#fff">$ npm install veralayer</div>
-     <div style="position:absolute;right:80px;bottom:88px;font-family:system-ui;font-weight:600;letter-spacing:.2em;font-size:18px;color:#57534E">VERAAGENT.IO</div></div>`],
+     <div style="position:absolute;right:80px;bottom:88px;font-family:system-ui;font-weight:600;font-size:22px;color:#57534E">veraagent.io</div></div>`],
 ];
 
 const { chromium } = require('C:/Users/Username/Desktop/tek/.tools/node_modules/playwright-core');

@@ -38,7 +38,7 @@ body{font-family:Montserrat;color:#000;background:#fff;overflow:hidden}
 .label{font-size:15px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#57534E}
 .brand{position:absolute;font-family:Newsreader;font-size:30px;letter-spacing:-.02em}
 .brand i{font-weight:700;color:#941900}
-.url{position:absolute;font-size:16px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#57534E}
+.url{position:absolute;font-size:20px;font-weight:600;letter-spacing:.01em;color:#57534E}
 .card{background:#fff;border:1.5px solid #E7E5E4;border-radius:28px;box-shadow:0 30px 60px -20px rgba(90,26,10,.16)}
 .code{font-family:JBM;font-size:22px;line-height:1.55;color:#292524;white-space:pre}
 .code .c{color:#A8A29E}.code .k{color:#941900}.code .s{color:#166534}
