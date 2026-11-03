@@ -3,6 +3,7 @@ export { check, checkMany, getAttestation, isAddress, type CheckResult } from '.
 export { verify, getSigner, canonical, type Attestation, type Signed } from './attest';
 export { config, aiEnabled } from './config';
 export { loadStats, storeEnabled, loadToken, saveToken, type Stats, type Token } from './store';
+export { publishToken, adminKeyOk, tokenMetadata } from './token';
 
 import { config } from './config';
 
