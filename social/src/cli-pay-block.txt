@@ -1,6 +1,6 @@
 
 BLOCK  1 SOL out
   → 1 SOL to 293BG8kFBPnNLfmFzcfExfaQfKFiAToYm3RCENiyffYy
-  LOW 4 293BG8kFBPnNLfmFzcfExfaQfKFiAToYm3RCENiyffYy signature ✓
-  block  293B…ffYy is low trust (4/100), below your minimum of medium: Address is listed in a tracked scam wallet cluster.
+  LOW 5 293BG8kFBPnNLfmFzcfExfaQfKFiAToYm3RCENiyffYy signature ✓
+  block  293B…ffYy is low trust (5/100), below your minimum of medium: Address is on curated list: tracked scam wallet cluster.
   block  1 SOL to 293B…ffYy exceeds the 0 SOL limit for low trust

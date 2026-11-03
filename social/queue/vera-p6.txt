@@ -1,7 +1,5 @@
-Give Claude a payment check.
+Give Claude a payment check. In claude_desktop_config.json, under mcpServers:
 
-One line in claude_desktop_config.json:
 "vera": { "command": "npx", "args": ["-y", "veralayer", "mcp"] }
 
-Tools: vera_check, vera_guard_payment
-Works in Claude Desktop, Claude Code, Cursor, any MCP client.
+vera_check scores an address. vera_guard_payment runs your policy on a planned SOL payment. Any MCP client.

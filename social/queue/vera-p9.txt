@@ -1,8 +1,8 @@
 If Vera can't answer, nothing gets paid.
 
-These are the defaults:
-· API down, forged signature, or a result for the wrong address → block
-· recipient with no history → review
-· NaN or negative amount → block
+Defaults:
+· API down, bad signature, or a result for the wrong address: block
+· recipient with no on-chain history: review
+· NaN or negative amount: block
 
-A guard that fails open isn't a guard.
+The first two are policy options: onCheckError and onUnknown.

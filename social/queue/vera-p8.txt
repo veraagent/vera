@@ -1,8 +1,8 @@
-Spending rules, in code:
+Spending rules are a plain object:
 
 minTier: 'medium'
 tierLimitsSol: { high: 50, medium: 5 }
 dailyLimitSol: 20
 tokenLimits: { [USDC]: 500 }
 
-Every decision is allow, review or block, with a finding code you can switch on. A typo in the policy throws at startup.
+Every finding carries a code (daily_limit, tier_limit, bad_signature…) you can branch on. A bad value throws at startup.

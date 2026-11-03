@@ -1,10 +1,8 @@
-// The Vera mark: an italic Newsreader V inside a score ring (87% filled). Same drawing as brand/build.mjs markRing().
-export default function Mark({ size = 40, color = '#941900', track = '#E7E5E4', className = '' }: { size?: number; color?: string; track?: string; className?: string }) {
+// The Vera mark: a serif V (traced from the chosen Ideogram lettermark, brand/logo-final). Source: brand/logo-final/v.svg
+export default function Mark({ size = 32, color = '#941900', className = '' }: { size?: number; color?: string; className?: string }) {
   return (
-    <svg viewBox="0 0 100 100" width={size} height={size} className={className} aria-hidden>
-      <circle cx="50" cy="50" r="44" fill="none" stroke={track} strokeWidth="5" />
-      <circle cx="50" cy="50" r="44" fill="none" stroke={color} strokeWidth="5" strokeLinecap="round" pathLength={100} strokeDasharray="87 100" transform="rotate(-90 50 50)" />
-      <text x="48" y="73" textAnchor="middle" fontFamily="var(--font-newsreader), Georgia, serif" fontStyle="italic" fontWeight="700" fontSize="66" fill={color}>V</text>
+    <svg viewBox="0 0 427 393" height={size} className={className} aria-hidden>
+      <path fill={color} fillRule="evenodd" d="M207.50,389.06C206.07,388.45 203.53,383.15 198.56,370.36C194.74,360.54 172.96,305.93 150.16,249.00C127.37,192.07 99.31,121.88 87.81,93.00C76.31,64.12 64.56,34.65 61.70,27.50L56.50,14.50L30.25,14.23L4.00,13.97L4.00,9.52L4.00,5.07L64.25,4.79C97.39,4.63 139.46,4.62 157.75,4.78L191.00,5.05L191.00,9.53L191.00,14.00L167.39,14.00C145.30,14.00 143.83,14.11 144.50,15.75C144.90,16.71 148.72,26.72 153.00,38.00C174.50,94.68 212.88,193.61 233.86,246.40L245.73,276.30L249.98,265.40C252.32,259.40 261.20,236.72 269.72,215.00C287.99,168.40 292.55,156.27 297.30,141.50C312.20,95.15 307.65,49.05 286.00,26.92C277.36,18.09 265.22,13.00 252.79,13.00L247.00,13.00L247.00,9.00L247.00,5.00L335.50,5.00L424.00,5.00L424.00,8.85L424.00,12.70L414.91,13.35C383.57,15.57 359.55,32.90 339.18,68.00C331.22,81.73 325.72,94.72 308.97,139.47C301.35,159.84 292.11,184.15 288.45,193.50C276.76,223.34 261.22,263.67 250.51,292.00C230.01,346.22 212.50,389.47 210.98,389.69C210.17,389.80 208.60,389.52 207.50,389.06Z" />
     </svg>
   );
 }

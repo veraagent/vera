@@ -1,9 +1,7 @@
-Three payments, three decisions:
+npx veralayer pay <address> <sol>, on mainnet data:
 
-npx veralayer pay <address> <sol>
+1 SOL to a medium-trust wallet (score 57): ALLOW
+12 SOL to the same wallet: REVIEW, over the 5 SOL medium cap
+1 SOL to a wallet in a tracked scam cluster: BLOCK
 
-1 SOL to a busy trader → ALLOW
-12 SOL to the same wallet → REVIEW (over the 5 SOL medium-tier cap)
-1 SOL to a flagged wallet → BLOCK
-
-Real output, mainnet data.
+Each line prints the rule that fired.

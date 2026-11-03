@@ -1,8 +1,8 @@
-Swap one call:
+Drop-in for one call:
 
-connection.sendTransaction(tx, [agent])
-→ guard.sendTransaction(tx, [agent])
+before: connection.sendTransaction(tx, [agent])
+after:  guard.sendTransaction(tx, [agent])
 
-Blocked transactions throw with the reason. Nothing reaches the network.
+A block throws with the finding codes. A review waits for your onReview handler. Neither reaches the network.
 
-Docs: veraagent.io/docs
+veraagent.io/docs

@@ -1,0 +1,3 @@
+BLOCK: 2 SOL to 293BG8kFBPnNLfmFzcfExfaQfKFiAToYm3RCENiyffYy
+- block: 293B…ffYy is low trust (5/100), below your minimum of medium: Address is listed as part of a tracked scam wallet cluster.
+- block: 2 SOL to 293B…ffYy exceeds the 0 SOL limit for low trust

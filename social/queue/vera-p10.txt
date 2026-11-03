@@ -1,7 +1,8 @@
 Big payments wait for a human.
 
-Over a tier cap → review. Pass onReview and approve from Telegram, Slack, wherever:
+Over a tier cap, the decision is review and the payment waits on your handler:
 
 onReview: (d) => askInTelegram(d.findings)
+onDecision: (d) => auditLog.write(d)
 
-Every decision also goes to onDecision with the rule that fired, which gives you an audit trail for free.
+onDecision receives every allow, review and block with the rule that fired.

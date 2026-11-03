@@ -1,9 +1,6 @@
 Your agent signs. Vera checks first.
 
-veralayer is a payment guard for AI agents on Solana:
-→ decodes every outgoing transaction
-→ scores each recipient from on-chain history
-→ enforces your policy before anything is signed
+veralayer is a payment guard for AI agents on Solana. It decodes each transaction, scores every recipient from on-chain history and applies your spending policy before signing.
 
 npm install veralayer
 

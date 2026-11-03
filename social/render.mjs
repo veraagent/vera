@@ -87,7 +87,6 @@ add('01-launch', W, H, `<div class="frame wash-tl">${brand()}${url()}
     <p style="margin-top:30px;font-size:24px;line-height:1.5;color:#57534E">A payment guard for AI agents on Solana. It decodes every transaction, scores each recipient and enforces your policy before anything is signed.</p>
     <div style="margin-top:34px;display:flex;flex-direction:column;gap:12px;align-items:flex-start">
       <div class="pill"><span class="m">$</span>npm install veralayer</div>
-      <div class="pill"><span class="m">$</span>pip install veralayer</div>
     </div>
   </div>
   <img src="${img('sim-blocked.png')}" style="position:absolute;right:56px;top:140px;width:760px;border-radius:28px;box-shadow:0 40px 80px -24px rgba(90,26,10,.25)">
@@ -139,11 +138,11 @@ add('03-policy', W, H, `<div class="frame wash-tr">${brand()}${url()}
 });`)}</div>
   </div>
   <div class="card" style="position:absolute;left:870px;right:72px;top:290px;overflow:hidden">
-    <div class="bar"><span>guard.evaluatePayment</span><span>12 SOL</span></div>
+    <div class="bar"><span>guard.evaluatePayment</span><span>3 SOL · 19 spent today</span></div>
     <div style="padding:30px 34px">
-      <div class="serif y" style="font-size:66px">Needs review.</div>
-      <div style="margin-top:20px;font-size:22px;line-height:1.5;color:#292524"><span class="y b" style="font-size:15px;letter-spacing:.12em">REVIEW</span> &nbsp;12 SOL to AgmL…zN51 exceeds the 5 SOL limit for medium trust</div>
-      <div style="margin-top:24px;font-family:JBM;font-size:17px;color:#78716C">code: tier_limit · score 57 · signature ✓</div>
+      <div class="serif r" style="font-size:66px">Blocked.</div>
+      <div style="margin-top:20px;font-size:22px;line-height:1.5;color:#292524"><span class="r b" style="font-size:15px;letter-spacing:.12em">BLOCK</span> &nbsp;This would bring today’s spend to 22 SOL, over your 20 SOL daily limit</div>
+      <div style="margin-top:24px;font-family:JBM;font-size:17px;color:#78716C">code: daily_limit</div>
     </div>
   </div>
 </div>`);
@@ -152,16 +151,16 @@ add('03-policy', W, H, `<div class="frame wash-tr">${brand()}${url()}
 add('04-signed', W, H, `<div class="frame wash-bl">${brand()}${url()}
   <div style="position:absolute;left:72px;top:170px;width:560px">
     <div class="serif" style="font-size:66px">Every score is <span class="it">signed.</span></div>
-    <p style="margin-top:30px;font-size:24px;line-height:1.55;color:#57534E">ed25519 over key-sorted JSON. The library checks it against the key at /.well-known/vera.json before your policy runs.</p>
-    <p style="margin-top:22px;font-size:24px;line-height:1.55;color:#57534E">Change one byte, the score stops verifying and the payment is blocked.</p>
+    <p style="margin-top:30px;font-size:24px;line-height:1.55;color:#57534E">ed25519 over key-sorted JSON. The library checks it against Vera’s key, pinned in the package, before your policy runs.</p>
+    <p style="margin-top:22px;font-size:24px;line-height:1.55;color:#57534E">Edit one byte of the signed result, or replay another address’s, and the payment is blocked.</p>
   </div>
   <img src="${img('result-page.png')}" style="position:absolute;right:72px;top:120px;width:720px;border-radius:24px;border:1.5px solid #E7E5E4;box-shadow:0 40px 80px -24px rgba(90,26,10,.22)">
 </div>`);
 
 // 05 how scoring works
 const STEPS = [
-  ['01', 'Read', '3,000 signatures, the last 100 transactions parsed, the wallet that sent the first SOL.'],
-  ['02', 'Score', 'Deterministic 0–100 from on-chain features. Flagged addresses capped at 5.'],
+  ['01', 'Read', '3,000 signatures, the last 100 transactions parsed, and the first funder when the history fits.'],
+  ['02', 'Score', 'Deterministic 0–100 from on-chain features. An address on the flagged list is capped at 5.'],
   ['03', 'Explain', 'Claude Opus 5.5 may move it ±15. Every reason must cite a feature.'],
   ['04', 'Sign', 'ed25519. Verified locally before your policy runs.'],
 ];
@@ -188,22 +187,19 @@ add('06-mcp', W, H, `<div class="frame wash-br">${brand()}${url()}
   </div>
   <div class="card" style="position:absolute;left:810px;right:72px;top:290px;overflow:hidden">
     <div class="bar"><span>tool · vera_guard_payment</span><span>to 293B…ffYy · 2 SOL</span></div>
-    <div class="term" style="padding:28px 32px;font-size:19px;white-space:pre-wrap"><span class="r b">BLOCK</span>: 2 SOL to 293B…ffYy
-- <span class="r">block</span>: 293B…ffYy is low trust (4/100),
-  below your minimum of medium: Address is
-  listed in a tracked scam wallet cluster.
-- <span class="r">block</span>: 2 SOL exceeds the 0 SOL limit
-  for low trust</div>
+    <div class="term" style="padding:28px 32px;font-size:19px;white-space:pre-wrap">${term(shortAddr(read('mcp-guard.txt'))).replace(/^- block/gm, '- <span class="r">block</span>')}</div>
   </div>
   <p style="position:absolute;left:72px;bottom:70px;font-size:22px;color:#57534E">Works in Claude Desktop, Claude Code, Cursor and any MCP client. Tools: vera_check, vera_guard_payment.</p>
 </div>`);
 
 // 07 Python
 add('07-python', W, H, `<div class="frame wash-tr">${brand()}${url()}
-  <div class="serif" style="position:absolute;left:72px;top:140px;font-size:64px">Now in <span class="it">Python.</span></div>
+  <div class="serif" style="position:absolute;left:72px;top:140px;font-size:64px">Also in <span class="it">Python.</span></div>
   <div class="card" style="position:absolute;left:72px;top:290px;width:820px;overflow:hidden">
     <div class="bar"><span>agent.py</span><span>pip install veralayer</span></div>
-    <div class="code" style="padding:28px 32px;font-size:21px">${hl(`from veralayer import VeraGuard, VeraBlockedError
+    <div class="code" style="padding:28px 32px;font-size:21px">${hl(`from veralayer import (
+    VeraGuard, VeraBlockedError, VeraReviewRequiredError,
+)
 
 guard = VeraGuard(policy={
     "min_tier": "medium",
@@ -213,11 +209,11 @@ guard = VeraGuard(policy={
 try:
     guard.authorize(to=recipient, amount_sol=1.5)
     send_sol(recipient, 1.5)
-except VeraBlockedError as e:
+except (VeraBlockedError, VeraReviewRequiredError) as e:
     log(e.decision["findings"])`)}</div>
   </div>
   <div style="position:absolute;left:940px;right:72px;top:300px">
-    <p style="font-size:24px;line-height:1.55;color:#57534E">Same policy engine. Same finding codes.</p>
+    <p style="font-size:24px;line-height:1.55;color:#57534E">Same rules and finding codes as JS, for planned payments.</p>
     <p style="margin-top:22px;font-size:24px;line-height:1.55;color:#57534E">Signatures verify byte for byte across JS and Python, so a result checked in one verifies in the other.</p>
     <p style="margin-top:22px;font-size:24px;line-height:1.55;color:#57534E">One dependency: cryptography.</p>
   </div>
@@ -232,7 +228,7 @@ add('08-cli', W, H, `<div class="frame wash-bl">${brand()}${url()}
       '$ npx veralayer pay AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51 1', read('cli-pay-allow.txt').split('\n').filter((l) => !l.includes('→')).join('\n'), '',
       '$ npx veralayer pay AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51 12', read('cli-pay-review.txt').split('\n').filter((l) => !l.includes('→')).join('\n'), '',
       '$ npx veralayer pay 293BG8kFBPnNLfmFzcfExfaQfKFiAToYm3RCENiyffYy 1', read('cli-pay-block.txt').split('\n').filter((l) => !l.includes('→') && !l.includes('exceeds the 0')).join('\n'),
-    ].join('\n')).replace(/: Address is listed in a tracked scam wallet cluster\./, ''))}</div>
+    ].join('\n')).replace(/(below your minimum of medium)[^\n]*/g, '$1'))}</div>
   </div>
 </div>`);
 

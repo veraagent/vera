@@ -1,5 +1,5 @@
-Every Vera score is signed (ed25519 over key-sorted JSON).
+Every Vera result is signed: ed25519 over key-sorted JSON.
 
-veralayer checks it against a key pinned in the package. Change one byte, or swap in another address's result, and the payment is blocked.
+veralayer verifies it against the issuer key pinned in the package. Edit one byte of the signed result, or replay another address's, and the payment is blocked.
 
-Verify one yourself: https://veraagent.io/a/864a6f38e98d3ac3104d267807abde960e6c7614f04485c637d73a3838d1df17
+Check one: https://veraagent.io/a/824fa9c73ef6f733bb398214a52b4a20637dc7f7b271259c1363f1efbb4c2ad4

@@ -1,7 +1,6 @@
-Agents don't send payments. They sign transactions.
-
-So the guard reads the transaction itself:
+Agents don't send payments, they sign transactions. So the guard decodes the tx:
 · SOL transfers
-· SPL + Token-2022 transfers, resolved to the wallet that owns the token account
+· SPL + Token-2022, resolved to the owner wallet
 · v0 lookup tables
-· approve / setAuthority / closeAccount → blocked by default
+· approve / setAuthority / closeAccount to someone else: blocked
+· a swap it can't value: review

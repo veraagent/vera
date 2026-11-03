@@ -1,0 +1,7 @@
+veralayer in Python:
+
+pip install veralayer
+
+guard.authorize(to=recipient, amount_sol=1.5) raises before you send if the policy says no. Same rules and finding codes as JS for planned payments; signed results verify byte for byte across both.
+
+One dependency: cryptography.
