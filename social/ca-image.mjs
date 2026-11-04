@@ -1,5 +1,5 @@
 // CA post image without the address (ticker only): node ca-image.mjs VeraAgent  →  ca/ca-post.png
-// Left: the ticker. Right: three real guard decisions from the CLI (social/src/cli-pay-*.txt).
+// Minimal: the serif V, then the ticker + 'is live.' on one line, the site in lowercase at the bottom.
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
@@ -36,28 +36,16 @@ const FONTS = path.join(ROOT, '..', 'brand', 'fonts').split(path.sep).join('/');
 const html = `<!doctype html><meta charset="utf-8"><style>
 @font-face{font-family:Newsreader;font-weight:200 800;src:url(file:///${FONTS}/Newsreader.woff2)}
 @font-face{font-family:Newsreader;font-weight:200 800;font-style:italic;src:url(file:///${FONTS}/Newsreader-italic.woff2)}
-@font-face{font-family:JBM;font-weight:100 800;src:url(file:///${FONTS}/JetBrainsMono.woff2)}
 @font-face{font-family:Montserrat;font-weight:100 900;src:url(file:///${FONTS}/Montserrat.woff2)}
 *{margin:0;box-sizing:border-box}
-body{width:1600px;height:900px;overflow:hidden;font-family:Montserrat;background:radial-gradient(900px 700px at 0% 0%,#FFD4D2 0,rgba(255,255,255,0) 70%),radial-gradient(800px 600px at 100% 100%,#FFE4DC 0,#fff 70%)}
-.t{position:absolute;left:96px;top:300px;font-family:Newsreader;font-weight:600;font-size:108px;letter-spacing:-.035em;line-height:1}
-.live{position:absolute;left:100px;top:432px;font-family:Newsreader;font-style:italic;font-weight:700;font-size:64px;color:#941900}
-.sub{position:absolute;left:100px;top:548px;width:540px;font-size:24px;line-height:1.5;color:#57534E}
-.url{position:absolute;left:100px;bottom:92px;font-size:24px;font-weight:600;color:#1C1917}
-.panel{position:absolute;right:80px;top:50%;transform:translateY(-50%);width:740px;background:#0C0A09;border-radius:48px;padding:52px 48px;color:#F5F5F4;font-family:JBM}
-.cmd{font-size:20px;color:#A8A29E;margin-bottom:34px}.cmd b{color:#F5F5F4;font-weight:500}
-.row{border-top:1px solid #292524;padding:30px 0}.row:last-child{border-bottom:1px solid #292524}
-.top{display:flex;align-items:center;gap:22px;font-size:24px}
-.v{font-weight:700;font-size:20px;letter-spacing:.08em;border:1.5px solid;border-radius:10px;padding:6px 12px;min-width:118px;text-align:center}
-.amt{font-weight:600}.to{color:#A8A29E}.tier{margin-left:auto;color:#D6D3D1;font-size:20px}
-.why{margin-top:14px;font-size:18px;color:#A8A29E;font-family:Montserrat}
+body{width:1600px;height:900px;overflow:hidden;font-family:Montserrat;background:radial-gradient(700px 520px at 50% 46%,#FFE1DD 0,#fff 72%);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.t{margin-top:56px;font-family:Newsreader;font-weight:500;font-size:96px;letter-spacing:-.03em;line-height:1;color:#1C1917}
+.t i{font-weight:700;color:#941900}
+.url{position:absolute;bottom:64px;font-size:24px;font-weight:600;color:#57534E}
 </style><body>
-<div style="position:absolute;left:96px;top:96px"><svg viewBox="0 0 ${vw} ${vh}" height="84"><path fill="#941900" fill-rule="evenodd" d="${d}"/></svg></div>
-<div class="t">${esc(ticker)}</div>
-<div class="live">is live.</div>
-<div class="sub">The payment guard for AI agents on Solana. Holder access is coming next.</div>
+<svg viewBox="0 0 ${vw} ${vh}" height="210"><path fill="#941900" fill-rule="evenodd" d="${d}"/></svg>
+<div class="t">${esc(ticker)} <i>is live.</i></div>
 <div class="url">veraagent.io</div>
-<div class="panel"><div class="cmd">$ <b>npx veralayer pay</b></div>${rows.map(card).join('')}</div>
 </body>`;
 const hf = path.join(OUT, 'ca.html');
 fs.writeFileSync(hf, html);
