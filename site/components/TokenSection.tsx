@@ -24,8 +24,8 @@ export default function TokenSection({ token }: { token: Token }) {
             <p className="mt-3 text-stone-600">The Vera API is free to use. Every check still costs real money: reading up to 3,000 signatures and parsing 100 transactions on Solana RPC, a Claude Opus 5.5 call to explain the score, hosting and storage. Trading fees from {ticker} pay for that, so the guard stays free and the code stays open.</p>
           </div>
           <div>
-            <h3 className="font-serif text-2xl font-medium">What the token does not do</h3>
-            <p className="mt-3 text-stone-600">Holding {ticker} does not change any score, and nobody can pay for a better one. This is the only official address; it is published here and on @veraagentio. Ignore any other.</p>
+            <h3 className="font-serif text-2xl font-medium">Holder access is next</h3>
+            <p className="mt-3 text-stone-600">Gated access for {ticker} holders is coming next. This is the only official address; it is published here and on @veraagentio.</p>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ ${mint}
 The only official address. It is also on veraagent.io.`;
 const reply = `Why ${ticker}: the Vera API is free, but every check reads onchain history and runs Claude. Trading fees pay for that, so the guard stays free and open source.
 
-Holding ${ticker} doesn't change any score. Nobody can pay for a better one.`;
+Next up: gated access for holders. Hold ${ticker} to unlock it.`;
 fs.writeFileSync(path.join(OUT, 'post.txt'), post + '\n');
 fs.writeFileSync(path.join(OUT, 'reply.txt'), reply + '\n');
 
